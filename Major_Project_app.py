@@ -1,10 +1,10 @@
 import streamlit as st
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_google_genai import GoogleGenerativeAI
 from langchain import PromptTemplate, LLMChain
 
 # Set up ChatGoogleGenerativeAI to consume API
 api_key = 'YOUR API KEY'  # Replace with your actual API key
-llm = ChatGoogleGenerativeAI(model='gemini-pro', google_api_key=api_key)
+llm = GoogleGenerativeAI(model='gemini-pro', google_api_key=api_key)
 
 # Define Prompt Templates
 disaster_input_template = """
